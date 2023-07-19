@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+  <link rel="icon" href="images/alien-svgrepo-com.svg" />
+  <title>ABC.Docker</title>
+  <meta name="description" content="Learn how to build a web app that converts YouTube videos into mp3 files using Python, Javascript, Docker and more!" />
+  <meta name="author" content="Adriano Galello" />
+  <meta property="og:title" content="Become a Fullstack DEV by building a YouTube to MP3 app" />
+  <meta property="og:description" content="Learn how to build a web app that converts YouTube videos into mp3 files using Python, Javascript, Docker and more!">
+  <meta property="og:url" content="https://gdi3d.github.io/learning-to-build/" />
+  <link rel="canonical" href="https://gdi3d.github.io/learning-to-build/" />
+  <meta property="og:image" content="https://gdi3d.github.io/learning-to-build/images/share-learning-to-build.jpg" />
+  
+  <style type="text/css">
+    .cover-main img {
+      height: 150px;
+    }
+    .app-name-link img {
+      height: 75px
+    }
+    .markdown-section > p, .markdown-section > ol > li {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      el: '#app',
+      relativePath: true,
+      loadSidebar: true,
+      subMaxLevel: 2,
+      coverpage: true,
+      auto2top: true,
+      mergeNavbar: true,
+      name: 'ABC.Docker',
+      repo: '',
+      logo: '/images/docker-svgrepo-com.svg',
+      plugins: [
+        function (hook, vm) {
+            hook.beforeEach(function (html) {
+              return (
+                html +
+                '\n\n----\n\n' +
+                '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none; font-size: 0.8em">Powered by docsify</a>'
+              );
+            })
+          },
+      ],
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-docker.min.js"></script>
+
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+</body>
+</html>
