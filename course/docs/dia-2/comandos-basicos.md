@@ -5,7 +5,7 @@ Como otras herramientas, Docker permite hacer muchas cosas y por lo tanto tiene 
 !> Te recomiendo consultar el manual ya que siempre es bueno descubrir comandos nuevos https://docs.docker.com/engine/reference/commandline/cli/  
 Te recomiendo examinar: run, exec, pull, logs, inspect, start/stop/restart, cp, images, ps, rm, stats, build
 
-# Creando imagenes
+### Creando una imagen
 
 Para poder distribuir tu contenedor es necesario crear una *imagen* del mismo. La imagen contiene todo lo necesario para que tu código pueda funcionar.
 
@@ -63,7 +63,7 @@ localhost/abcdocker_timestamp  latest      591586f9f590  23 hours ago  7.62 MB
 
 !> Explora que otras cosas puedes hacer con `docker image -h` y `docker images -h`
 
-# Lanzando e interactuando con contenedores
+### Lanzando e interactuando con contenedores
 
 Para los siguientes ejercicios usaremos la *imagen* que hemos creado anteriormente y lanzaremos diferentes instancias de esa imagen como contenedores.
 
@@ -161,10 +161,31 @@ Una vez que nuestro contenedor ya está funcionando nuevamente, comprobandolo co
 
 ```sh
 # Accede al contendor por su nombre o ID
-
 docker exec -it mi-contenedor-background /bin/sh
 
 # Escribe exit para salir del contenedor
 ```
 
+Por ultimo, podemos detener y eliminar el contenedor
 
+```sh
+# Primero debemos detener el contenedor
+docker stop mi-contenedor-background
+
+# Comprobemos que este detenido
+docker ps -a
+
+CONTAINER ID  IMAGE                                 COMMAND     CREATED             STATUS                       PORTS       NAMES
+e7f998e61261  localhost/abcdocker_timestamp:latest              About a minute ago  Exited (137) 22 seconds ago              mi-contenedor-background
+
+# Ahora ya podemos borrarlo
+docker rm mi-contenedor-background
+
+# Comprobemos que se haya eliminado
+docker ps -a
+```
+
+Es importante reconocer que eliminar un contenedor no elimina su imagen. Podemos volver a lanzar un contenedor basado en esa misma imagen cuando querramos.
+
+!> Cuando trabajamos con mas de un contenedor podemos recurrir al siguiente comando para detener y eliminar todos los contenedores  
+`docker stop $(docker ps -qa) && docker rm $(docker ps -qa)`

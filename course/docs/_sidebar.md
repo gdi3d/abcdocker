@@ -5,4 +5,5 @@
   - [Hola Mundo!](/dia-1/hola-mundo)
 - Día 2
   - [Comandos Básicos](/dia-2/comandos-basicos)
+  - [Desarrollando con Contenedores](/dia-2/volumenes-puertos)
 - Día 3

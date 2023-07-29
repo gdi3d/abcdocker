@@ -34,7 +34,7 @@ La diferencia principal es que los contenedores no utilizan un hypervisor para f
 
 # Que utilidad tienen?
 
-Los contenedores permiten un máximo aprovechamiento y  de los recursos de un servidor ya que puedes correr muchas aplicaciones en su propio entorno.
+Los contenedores permiten un máximo aprovechamiento y de los recursos de un servidor ya que puedes correr muchas aplicaciones en su propio entorno.
 
 Además simplifica la operación porque no tienes que preocuparte por conflictos de dependencias, actualizaciones o sistema operativo que la aplicación necesite.
 
