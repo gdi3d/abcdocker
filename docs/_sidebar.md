@@ -1,3 +1,5 @@
+<!-- docs/_sidebar.md -->
+
 - [Antes de Comenzar](/README)
 - Día 1
   - [Introducción](/dia-1/intro)
