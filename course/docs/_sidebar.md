@@ -1,9 +1,10 @@
-- [Empezar](/README)
+- [Antes de Comenzar](/README)
 - Día 1
   - [Introducción](/dia-1/intro)
   - [Instalación de Docker](/dia-1/instalacion)
-  - [Hola Mundo!](/dia-1/hola-mundo)
 - Día 2
   - [Comandos Básicos](/dia-2/comandos-basicos)
-  - [Desarrollando con Contenedores](/dia-2/volumenes-puertos)
+  - [Desarrollando con Contenedores](/dia-2/desarrollando-docker)
 - Día 3
+  - [Docker Compose](/dia-3/docker-compose)
+- [Preguntas y Contacto](/preguntas-contacto)

@@ -5,7 +5,7 @@ Como otras herramientas, Docker permite hacer muchas cosas y por lo tanto tiene 
 !> Te recomiendo consultar el manual ya que siempre es bueno descubrir comandos nuevos https://docs.docker.com/engine/reference/commandline/cli/  
 Te recomiendo examinar: run, exec, pull, logs, inspect, start/stop/restart, cp, images, ps, rm, stats, build
 
-### Creando una imagen
+# Creando una imagen
 
 Para poder distribuir tu contenedor es necesario crear una *imagen* del mismo. La imagen contiene todo lo necesario para que tu código pueda funcionar.
 
@@ -47,7 +47,7 @@ Successfully tagged localhost/dia2:latest
 591586f9f590429e4137b255f12b8cce020d5fc11bc44c8bc56b6327e9b8ce78
 ```
 
-Nuestra imagen está lista y guardada en nuestra pc. Podemos verificarlo de la siguiente manera:
+Nuestra imagen está lista y guardada en nuestro pc. Podemos verificarlo de la siguiente manera:
 
 ```sh
 docker images
@@ -61,9 +61,9 @@ localhost/abcdocker_timestamp  latest      591586f9f590  23 hours ago  7.62 MB
 ...
 ```
 
-!> Explora que otras cosas puedes hacer con `docker image -h` y `docker images -h`
+!> Explora qué otras cosas puedes hacer con `docker image -h` y `docker images -h`
 
-### Lanzando e interactuando con contenedores
+# Lanzando e interactuando con contenedores
 
 Para los siguientes ejercicios usaremos la *imagen* que hemos creado anteriormente y lanzaremos diferentes instancias de esa imagen como contenedores.
 
@@ -138,12 +138,12 @@ Verás el siguiente error:
 Error: creating container storage: the container name "mi-contenedor-background" is already in use by 94af5447d11a393b1ecd2b9a2964a1c43635749a6c61f328a9bc14406242c54f. You have to remove that container to be able to reuse that name: that name is already in use
 ```
 
-Pero qué sucede, si ya habiamos parado el contenedor en un paso anterior?. El problema es que el contenedor todavía existe, pero en estado de *stop* y no puedes tener otro contenedor con el mismo nombre.
+Pero qué sucede, si ya habíamos parado el contenedor en un paso anterior?. El problema es que el contenedor todavía existe, pero en estado de *stop* y no puedes tener otro contenedor con el mismo nombre.
 
 Esto lo podemos comprobar utilizando una de las opciones de `docker ps`
 
 ```sh
-# Muestra todos los contenedores, incluyendo los que esten en stop
+# Muestra todos los contenedores, incluyendo los que estén en stop
 
 docker ps -a
 ```
@@ -166,13 +166,13 @@ docker exec -it mi-contenedor-background /bin/sh
 # Escribe exit para salir del contenedor
 ```
 
-Por ultimo, podemos detener y eliminar el contenedor
+Por último, podemos detener y eliminar el contenedor
 
 ```sh
 # Primero debemos detener el contenedor
 docker stop mi-contenedor-background
 
-# Comprobemos que este detenido
+# Comprobemos que esté detenido
 docker ps -a
 
 CONTAINER ID  IMAGE                                 COMMAND     CREATED             STATUS                       PORTS       NAMES
@@ -185,7 +185,7 @@ docker rm mi-contenedor-background
 docker ps -a
 ```
 
-Es importante reconocer que eliminar un contenedor no elimina su imagen. Podemos volver a lanzar un contenedor basado en esa misma imagen cuando querramos.
+Es importante reconocer que eliminar un contenedor no elimina su imagen. Podemos volver a lanzar un contenedor basado en esa misma imagen cuando queramos.
 
-!> Cuando trabajamos con mas de un contenedor podemos recurrir al siguiente comando para detener y eliminar todos los contenedores  
+!> Cuando trabajamos con más de un contenedor podemos recurrir al siguiente comando para detener y eliminar todos los contenedores  
 `docker stop $(docker ps -qa) && docker rm $(docker ps -qa)`

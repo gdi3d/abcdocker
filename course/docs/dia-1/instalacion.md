@@ -44,6 +44,8 @@ Successfully tagged localhost/check:latest
 66c64bd08b65a19726d9ae52e80116418e515402852a42f18b81515def75b147
 ```
 
+# Hola Mundo
+
 Comprobemos que el contenedor y docker funcionan correctamente:
 
 ```sh
@@ -52,7 +54,9 @@ docker run --rm abcdocker_check
 
 Verás el siguiente mensaje
 
-```
+
+<pre style="line-height:1.2rem">
+
   _    _      _ _                            _     _ _
  | |  | |    | | |                          | |   | | |
  | |__| | ___| | | ___   __      _____  _ __| | __| | |
@@ -61,5 +65,6 @@ Verás el siguiente mensaje
  |_|  |_|\___|_|_|\___/    \_/\_/ \___/|_|  |_|\__,_(_)
 
  Ya estas listo para continuar aprendiendo sobre contenedores!
-```
+
+</pre>
 

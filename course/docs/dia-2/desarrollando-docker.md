@@ -6,7 +6,7 @@ Para eso vamos usar como base otro tutorial que escribí hace un tiempo
 
 > [https://gdi3d.github.io/quit-virtualenv-and-use-docker-2020-03-22/](https://gdi3d.github.io/quit-virtualenv-and-use-docker-2020-03-22/)
 
-### Port Forwarding
+# Port Forwarding
 
 Lo primero que debemos hacer es clonar el repositorio
 
@@ -178,11 +178,11 @@ WARNING: This is a development server. Do not use it in a production deployment.
 10.88.0.6 - - [27/Jul/2023 17:18:40] "GET / HTTP/1.1" 200 -
 ```
 
-### Montar volumenes
+# Montar volúmenes
 
 Montar un volumen nos permite conectar nuestro directorio de trabajo en el filesystem del contenedor. De esta forma podemos modificar nuestro código de forma local y ese cambio se verá dentro del contenedor.
 
-Si no existiera esta posibilidad, cada cambio en nuestro código debería de ser copiado al contenedor o, deberíamos construir una imagen cada vez que quisieramos probar un cambio.
+Si no existiera esta posibilidad, cada cambio en nuestro código debería de ser copiado al contenedor o, deberíamos construir una imagen cada vez que quisiéramos probar un cambio.
 
 Al igual que con el puerto, solo debemos agregar un argumento al comando de `docker run`
 
@@ -201,7 +201,7 @@ Verás que nuestro webserver vuelve a iniciarse. Hagamos una nueva llamada al en
 ```sh
 curl http://127.0.0.1:8080
 
-# Respondera
+# Responderá
 
 Hello World!
 ```

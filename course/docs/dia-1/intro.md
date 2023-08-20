@@ -2,7 +2,7 @@
 
 Muchas veces se intercambia la palabra *Docker* y *contenedores*, y aunque son parecidas, son cosas diferentes.
 
-**Docker** es una empresa que desarrolló varios productos enfocados a contenedores. Mientras que los **contenedores** son una tecnología basadas en los [cgroups](https://en.wikipedia.org/wiki/Cgroups) de Linux.
+**Docker** es una empresa que desarrolló varios productos enfocados a contenedores. Mientras que los **contenedores** son una tecnología basada en los [cgroups](https://en.wikipedia.org/wiki/Cgroups) de Linux.
 
 !> Si quieres saber más sobre cgroups te recomiendo este artículo (4 partes)  
 https://www.redhat.com/sysadmin/cgroups-part-one  
@@ -26,11 +26,11 @@ Algo importante a saber es que dentro de tu contenedor **solo debe correr un pro
 
 En ese caso tendrías 3 contenedores diferentes y en cada uno lanzarías el proceso que corresponda.
 
-# Maquina Virtual VS Contenedores
+# Máquina Virtual VS Contenedores
 
 ![vm vs docker](../images/vm-vs-docker.png)
 
-La diferencia principal es que los contenedores no utilizan un hypervisor para funcionar. El acceso a los recursos del host es controlado por el engine de contenedores que este instalado (Docker, Podman, Containerd, etc.)
+La diferencia principal es que los contenedores no utilizan un hypervisor para funcionar. El acceso a los recursos del host es controlado por el engine de contenedores que esté instalado (Docker, Podman, Containerd, etc.)
 
 # Que utilidad tienen?
 
@@ -49,4 +49,19 @@ La utilización de contenedores facilita el desarrollo de microservicios por lo 
 Puedes montar un entorno de desarrollo con backends escritos en diferentes lenguajes y diferentes versiones sin tener que perder tiempo configurando dependencias ni manteniendolas.
 
 !> Los microservicios, a diferencia del monolítico, son una forma de arquitectura cuyo objetivo principal es diseñar *servicios* sencillos e independientes que se comunican entre si vía API y que solo realizan una tarea específica de tu backend.    
-![monito-microservicios](../images/monilitico-microservicios.png)
+![monolito-microservicios](../images/monilitico-microservicios.png)
+
+# Imágenes
+
+Para poder distribuir tu contenedor es necesario crear una *imagen* del mismo. La imagen contiene todo lo necesario para que tu código pueda funcionar.
+
+Esta imagen se compone de capas que son reutilizadas por otros contenedores y que terminan conformando el file system que existe dentro de tu contenedor.
+
+![imagenes-layers](../images/image-layers.png)
+
+Cada comando crea una layer que está vinculado al anterior. (A → B → C → D → ....)
+
+> Si modificas la última línea del Dockerfile y vuelvas a crear la imagen, solo se modifica ese layer (G). Pero si modificas la primera, todos los otros layers tendrán que volverse a crear.
+
+
+!> Más info: https://opensource.com/article/21/8/container-image
