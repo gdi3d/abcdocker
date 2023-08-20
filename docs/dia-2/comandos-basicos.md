@@ -13,7 +13,7 @@ Esta imagen se compone de capas que son reutilizadas por otros contenedores y qu
 
 !> Más info: https://opensource.com/article/21/8/container-image
 
-Para comenzar, crearemos nuestra primera imagen. Abre tu terminal y ve al directorio donde clonamos el repositorio y accede a `course/resources/dia-2/timestamp` (más adelante podrás crear una desde 0)
+Para comenzar, crearemos nuestra primera imagen. Abre tu terminal y ve al directorio donde clonamos el repositorio y accede a `docs/resources/dia-2/timestamp` (más adelante podrás crear una desde 0)
 
 ```sh
 # Examinemos su contenido

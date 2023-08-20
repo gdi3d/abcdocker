@@ -21,7 +21,7 @@ En ambos casos se instalará una maquina virtual para el funcionamiento del engi
 Ej.: `docker build -t` .... se reemplaza por: `podman build -t ...`
 
 ```sh
-# Ve al directorio course/resources/dia-1/check
+# Ve al directorio docs/resources/dia-1/check
 docker build -t abcdocker_check .
 ```
 
