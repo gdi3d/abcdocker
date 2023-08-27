@@ -21,6 +21,9 @@ En ambos casos se instalará una maquina virtual para el funcionamiento del engi
 Ej.: `docker build -t` .... se reemplaza por: `podman build -t ...`
 
 ```sh
+# Clona este repositorio
+git clone git@github.com:gdi3d/abcdocker.git
+
 # Ve al directorio docs/resources/dia-1/check
 docker build -t abcdocker_check .
 ```
