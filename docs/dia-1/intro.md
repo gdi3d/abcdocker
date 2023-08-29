@@ -30,7 +30,9 @@ En ese caso tendrías 3 contenedores diferentes y en cada uno lanzarías el proc
 
 ![vm vs docker](../images/vm-vs-docker.png)
 
-La diferencia principal es que los contenedores no utilizan un hypervisor para funcionar. El acceso a los recursos del host es controlado por el engine de contenedores que esté instalado (Docker, Podman, Containerd, etc.)
+Los contenedores proporcionan aislamiento de procesos en un sistema operativo compartido, en lugar del aislamiento del sistema operativo en hardware compartido que se obtiene con las máquinas virtuales.
+
+Los contenedores no utilizan un hypervisor para funcionar. El acceso a los recursos del host es controlado por el engine de contenedores que esté instalado (Docker, Podman, Containerd, etc.)
 
 # Que utilidad tienen?
 
