@@ -6,7 +6,7 @@ Una vez instalado **WSL 2**, podrás instalar docker siguiendo [la guia de insta
 
 Recuerda que Docker es solo una opción para correr contenedores. En mi caso despues de varios años y algunos recientes problemas he decidido optar por [Podman](https://podman.io/docs/installation).
 
-Tanto *Docker* como *Podman* tienen los mismos comandos. Por lo que no tendrias conflictos si quieres usar uno u el otro.
+Tanto *Docker* como *Podman* tienen los mismos comandos. Por lo que no tendrás conflictos si quieres usar uno u el otro.
 
 Aquí los links para las dos opciones
 
@@ -14,6 +14,8 @@ Aquí los links para las dos opciones
 2. [Instalación de Podman](https://podman.io/docs/installation)
 
 En ambos casos se instalará una maquina virtual para el funcionamiento del engine de contenedores.
+
+!> En mi caso desde hace algún tiempo opte por utilizar Podman para desarrollo. Tuve algunos problemas de rendimiento y estabilidad con las ultimas versiones de Docker. Podman me resulto más ligero y estable.
 
 # Comprobar la instalación
 
