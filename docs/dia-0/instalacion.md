@@ -10,8 +10,8 @@ Tanto *Docker* como *Podman* tienen los mismos comandos. Por lo que no tendrás 
 
 Aquí los links para las dos opciones
 
-1. [Instalación de Docker](https://docs.docker.com/engine/install/)
-2. [Instalación de Podman](https://podman.io/docs/installation)
+2. [Instalación de Podman](https://podman-desktop.io/downloads) *(recomendada)*
+1. [Instalación de Docker](https://docs.docker.com/desktop/)
 
 En ambos casos se instalará una maquina virtual para el funcionamiento del engine de contenedores.
 
