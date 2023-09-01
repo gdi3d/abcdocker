@@ -24,9 +24,10 @@ Ej.: `docker build -t` .... se reemplaza por: `podman build -t ...`
 
 ```sh
 # Clona este repositorio
-git clone git@github.com:gdi3d/abcdocker.git
+git clone https://github.com/gdi3d/abcdocker.git
 
-# Ve al directorio docs/resources/dia-1/check
+# Ve al directorio abcdocker/docs/resources/dia-1/check y crea tu primera imagen
+cd abcdocker/docs/resources/dia-1/check
 docker build -t abcdocker_check .
 ```
 

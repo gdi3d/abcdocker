@@ -11,7 +11,7 @@ Para eso vamos usar como base otro tutorial que escribí hace un tiempo
 Lo primero que debemos hacer es clonar el repositorio
 
 ```sh
-git clone git@github.com:gdi3d/quit-virtualenv-use-docker.git
+git clone https://github.com/gdi3d/quit-virtualenv-use-docker.git
 
 ```
 
