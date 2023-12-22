@@ -61,7 +61,7 @@ Esta imagen se compone de capas que son reutilizadas por otros contenedores y qu
 
 ![imagenes-layers](../images/image-layers.png)
 
-Cada comando crea una layer que está vinculado al anterior. (A → B → C → D → ....)
+Cada comando crea un layer que está vinculado al anterior. (A → B → C → D → ....)
 
 > Si modificas la última línea del Dockerfile y vuelvas a crear la imagen, solo se modifica ese layer (G). Pero si modificas la primera, todos los otros layers tendrán que volverse a crear.
 
