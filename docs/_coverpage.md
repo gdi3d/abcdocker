@@ -6,5 +6,4 @@
 
 > Aprende lo esencial sobre docker y contenedores
 
-[GitHub](https://github.com/gdi3d/abcdocker)
 [Empezar](/README)
