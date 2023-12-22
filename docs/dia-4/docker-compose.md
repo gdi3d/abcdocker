@@ -1,8 +1,8 @@
 # Docker Compose
 
-Docker Compose es una herramienta que permite definir y ejecutar aplicaciones multicontenedores. Con Docker Compose defines en un YAML los *servicios* de tu aplicación y sus configuraciones. Luego solo ejecutas `docker-compose up` y todos los contenedores serán lanzados.
+Docker Compose es una herramienta que permite definir y ejecutar aplicaciones con multiples contenedores. Al utilizar Docker Compose defines en un YAML los *servicios* de tu aplicación y sus configuraciones. Luego solo ejecutas `docker-compose up` y todos los contenedores serán lanzados.
 
-El siguiente ejemplo es el archivo `docker-compose.yml` del tutorial [https://gdi3d.github.io/learning-to-build](https://gdi3d.github.io/learning-to-build) que estaremos haciendo, en parte, para aprender sobre docker-compose.
+El siguiente ejemplo es el archivo `docker-compose.yml` del tutorial [https://gdi3d.github.io/learning-to-build](https://gdi3d.github.io/learning-to-build).
 
 !> Para conocer mas comandos que puedes utilizar en docker compose puedes consultar la doc [https://docs.docker.com/compose/compose-file/compose-file-v3/](https://docs.docker.com/compose/compose-file/compose-file-v3/)
 
@@ -64,6 +64,6 @@ Para entender más sobre como funciona el servicio de DNS en docker vayamos al p
 
 Ahora que ya tenemos un poco más claro como funciona docker compose, probemos un proyecto real y no solo contenedores sueltos.
 
-Empecemos por instalar el proyecto siguiendo los pasos indicados en [https://gdi3d.github.io/learning-to-build/#/README?id=how-to-install-it](https://gdi3d.github.io/learning-to-build/#/README?id=how-to-install-it)
+Utilizando el siguiente proyecto podrás aprender mas sobre **docker-compose** y algunas cosas más[https://gdi3d.github.io/learning-to-build/#/README?id=getting-started](https://gdi3d.github.io/learning-to-build/#/README?id=getting-started)
 
 !> Una vez lanzados los contenedores con docker-compose up, puedes seguir interactuando con ellos utilizando el comando `docker`, no hace falta aprender nuevos comandos.
