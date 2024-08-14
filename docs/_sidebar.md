@@ -6,4 +6,4 @@
 - [Día 2 - Comandos Básicos](/dia-2/comandos-basicos)
 - [Día 3 - Desarrollando con Contenedores](/dia-3/desarrollando-docker)
 - [Día 4 - Docker Compose](/dia-4/docker-compose)
-- [Preguntas y Contacto](preguntas-contacto)
+- [Preguntas y Contacto](/preguntas-contacto)
