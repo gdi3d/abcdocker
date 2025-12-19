@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Aprende sobre docker y contenedores, como crearlos, cuando utilizarlos y para que sirven" />
+        <meta property="og:title" content="El ABC de Docker y contenedores" />
+        <meta property="og:description" content="Aprende sobre docker y contenedores, como crearlos, cuando utilizarlos y para que sirven">
+        <meta property="og:url" content="https://gdi3d.github.io/abcdocker/" />
+        <link rel="canonical" href="https://gdi3d.github.io/abcdocker/" />
+        <meta property="og:image" content="https://gdi3d.github.io/abcdocker/landing/assets/img/share-abcdocker.jpg" />
+        <title>El ABC de Docker y contenedores</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="landing/assets/favicon.svg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="landing/css/styles.min.css" rel="stylesheet" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHJ5Y664ZB"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HHJ5Y664ZB');
+        </script>
+
+        <style type="text/css">
+          .calendar {
+            border-left: 1px dotted gray;
+          }
+          .masthead {
+            background-image: url("landing/assets/img/bkg-header.jpg");
+            background-position: right;
+            background-blend-mode: multiply;
+          }
+          .page-section-about-me {
+            background-image: url("landing/assets/img/bkg-about-me.jpg");
+            background-position: right;
+          }
+          .page-section-sign-up {
+            background-image: url("landing/assets/img/bkg-about-me.jpg");
+            background-position: top; 
+          }
+
+          .course-content p.date{ 
+            font-size: .8em;
+            font-weight: lighter;
+            margin-bottom: 5px;
+          }
+
+          .lead a { color: blue }
+        </style>
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">🐳 ABC.Docker</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#que-aprenderas">¿Qué Aprenderás?</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#programa">Programa</a></li>
+                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#resumen">Precio</a></li> -->
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#sobre-mi">Sobre mi</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#faq">F.A.Q</a></li>
+                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#inscribete">¡Inscríbete!</a></li> -->
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="es/docs" target="_blank">📖 Guía</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><small><a class="small nav-link py-3 px-0 px-lg-3 rounded" href="index.html">🇬🇧 English</a></small></li>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="landing/assets/img/docker-svgrepo-com.svg" alt="docker" />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">ABC.Docker</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-3">Aprende lo esencial sobre docker y contenedores</p>
+                <!-- <p><a href="#inscribete" class="btn btn-xl btn-warning me-3">¡Inscríbete!</a>  -->
+                <p><a href="es/docs/" class="btn btn-xl btn-warning me-3">¡📖 Accede a la Guía!</a> 
+                <!-- <a href="docs" target="_blank" class="btn btn-secondary"></a></p> -->
+            </div>
+        </header>
+        
+        <section class="page-section" id="que-aprenderas">
+            <div class="container">
+                
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">¿Qué Aprenderás?</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    
+                    <div class="col-md-4 col-lg-4 mb-5">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">¿Que es?</h5>
+                            <p class="card-text">Que son los contenedores, cuando y como deberías utilizarlos</p>
+                            <a href="#programa" class="card-link">Contenido del curso</a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 mb-5">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Docker Compose</h5>
+                            <p class="card-text">Una herramienta para definir y lanzar aplicaciones con múltiples contenedores</p>
+                            <a href="#programa" class="card-link">Contenido del curso</a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 mb-5">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Workshops</h5>
+                            <p class="card-text">El curso esta pensado para que aprendas realizando tareas del mundo real</p>
+                            <a href="#programa" class="card-link">Contenido del curso</a>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+
+      <section class="page-section bg-light mb-0" id="programa">
+        <div class="container">
+          
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contenido Del Curso</h2>
+            
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-book"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <div class="row text-center course-content">
+              
+              <div class="col-md-4">
+                <!-- <p class="date">Día 1</p> -->
+                
+                <h3>Introducción</h3>
+                
+                <ul class="list-unstyled">
+                  <li>¿Qué, cómo y cuándo?</li>
+                  <li>VM's vs Contenedores</li>
+                  <li>Imagenes</li>
+                  <li>Microservicios</li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <!-- <p class="date">Día 2</p> -->
+                <h3>Workshop</h3>
+                <ul class="list-unstyled">
+                  <li>Comandos Básicos (CLI)</li>
+                  <li>Crear Imagen</li>
+                  <li>Lanzar contendores</li>
+                  <li>Conectarse a contenedores</li>
+                  <li>Examinando logs</li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <!-- <p class="date">Día 3</p> -->
+                <h3>Workshop</h3>
+                <ul class="list-unstyled">
+                  <li>Docker Compose</li>
+                  <li>YAML</li>
+                  <li>DNS</li>
+                  <li>Dependencias</li>
+                  <li>App de Ejemplo</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- <div class="row">
+              <div class="col-md-12 text-center text-secondary text-uppercase">
+                <hr>
+                <h3>Lunes, Martes y Jueves</h3>
+                <h5>22:30 a 23:30 (España)</h5>
+              </div>
+            </div> -->
+
+        </div>
+        
+      </section>
+
+      <!-- <section class="page-section bg-secondary text-white" id="resumen">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 offset-md-4">
+                
+                <div class="card mb-4 bg-light text-secondary text-center price-card">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Precio Del Curso</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title display-2">€ </h1>
+                    <ul class="list-unstyled mt-3 mb-4 lead">
+                      <li>Paga con PayPal ó Bizum</li>
+                      <li><hr class="mb-2 mt-2 text-muted"></li>
+                      <li>Lunes, Martes y Jueves</li>
+                      <li><hr class="mb-2 mt-2 text-muted"></li>
+                      <li>22:30 a 23:30 (España)</li>
+                      <li><hr class="mb-2 mt-2 text-muted"></li>
+                      <li>Plazas Limitadas (max. 4)</li>
+                      <li><hr class="mb-2 mt-2 text-muted"></li>
+                      <li>De Forma Virtual</li>
+                      <li><hr class="mb-2 mt-2 text-muted"></li>
+                      <li><a href="#faq" class="text-success">Ver Preguntas Frecuentes</a></li>
+                    </ul>
+                    <a href="#inscribete" class="btn btn-xl btn-warning btn-block text-uppercase">¡Inscríbete ahora!</a>
+                  </div>
+                </div> 
+              
+              </div>
+            </div>
+        </div>
+      </section> -->
+
+
+      <section class="page-section bg-primary text-white mb-0 page-section-about-me" id="sobre-mi">
+          <div class="container">
+              
+              <h2 class="page-section-heading text-center text-uppercase text-white">¿Quién soy?</h2>
+              
+              <div class="divider-custom divider-light">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-user-alt"></i></div>
+                  <div class="divider-custom-line"></div>
+              </div>
+              
+              <div class="row d-flex align-items-center">
+                  <div class="col-md-3 ms-auto">
+                    <img src="landing/assets/img/foto-perfil.jpeg" alt="Adriano" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="col-md-6 me-auto">
+                    <p class="lead">
+                      Me llamo Adriano y soy desarrollador y Solutions Architect desde 15+ años.
+                    </p>
+                    <p class="lead">
+                      Trabajé como desarrollador Full Stack, Technical Lead y Solutions Architect. Actualmente soy Cloud Solutions Specialists en IBM
+                    </p>
+                    <p class="lead">
+                      Pero como todo desarrollador siempre estoy buscando nuevos proyectos (y abandonando los otros 😬)
+                    </p>
+
+                    <div class="mt-4">
+                      <a class="btn btn-xl btn-secondary" href="https://www.linkedin.com/in/adrianogalello/?locale=es_ES" target="_blank">
+                          <i class="fab fa-fw fa-linkedin"></i>
+                          LinkedIn
+                      </a>
+                      <a class="btn btn-xl btn-secondary" href="https://gdi3d.github.io/" target="_blank">
+                          <i class="fas fa-fw fa-blog"></i>
+                          Blog
+                      </a>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+
+        <section class="page-section bg-light mb-0" id="faq">
+          <div class="container">
+            <!-- Contact Section Heading-->
+              <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Preguntas Frecuentes</h2>
+              <!-- Icon Divider-->
+              <div class="divider-custom mb-5">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-question-circle"></i></div>
+                  <div class="divider-custom-line"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 offset-md-2">
+                  <h2>¿Para quién está pensado?</h2>
+                  
+                  <p class="lead">El curso está diseñado para todas las personas que tengan un conocimiento básico de desarrollo y quieran comenzar a utilizar Docker.</p>
+                  <p class="lead">No te convertiras en un experto en Docker, pero tendrás todos los conocimientos necesarios para comenzar a utilizarlo en tu día a día.</p>
+                  <hr class="mb-5 mt-5">
+
+                  <h2>¿Qué duración tiene?</h2>
+                  <p class="lead">El curso se divide en 4 dias de aproximadamente 45/60 mins cada uno.</p>
+                  <hr class="mb-5 mt-5">
+
+                  <!-- <h2>¿Cuál es el precio?</h2>
+                  <p class="lead">El precio es de € 30</p>  
+                  <hr class="mb-5 mt-5">
+
+                  <h2>¿Es virtual o presencial?</h2>
+                  <p class="lead">El curso se dictará de forma virtual.</p>
+                  <hr class="mb-5 mt-5">
+
+                  <h2>¿Cuándo se dictará el curso?</h2>
+                  <p class="lead">Los días Lunes, Martes y Jueves 22:30 a 23:30 (hora España)</p>
+                  <hr class="mb-5 mt-5">
+
+                  <h2>¿El curso es una video llamada en directo o video pre-grabado?</h2>
+                  
+                  <p class="lead">Es una video llamada en directo. Estaré ayudandote con los ejercicios y las preguntas que tengas.</p>
+                  <hr class="mb-5 mt-5">
+
+                  <h2>¿Plazas disponibles?</h2>
+                  <p class="lead">El curso cuenta con un total de 4 plazas para poder garantizar una adecuada atención a cada uno de los inscritos.</p>
+                  <hr class="mb-5 mt-5">
+
+                  <h2>¿Qué material recibo al finalizar el curso?</h2>
+                  <p class="lead">Todo lo realizado y explicado en el curso quedará subido a un repositorio público de GitHub para que puedas volver sobre el material cuando lo necesites.</p>
+                  <hr class="mb-5 mt-5"> -->
+                  
+                  <h2>¿Que necesito para hacer el curso?</h2>
+                  <p class="lead">Solo necesitas un portátil con Windows 10, Mac o Linux y tener instalado el <a href="es/docs/#dia-0/instalacion">software necesario indicado en este enlace de la guía</a></p>
+                  <hr class="mb-5 mt-5">
+
+                  <!-- <h1 class="text-uppercase text-center"><i class="fas fa-arrow-down"></i>Inscríbete Ahora<i class="fas fa-arrow-down"></i></h1> -->
+                  <h1 class="text-uppercase text-center"></h1>
+                </div>
+
+              </div>
+
+          </div>
+          
+        </section>
+        
+        <!-- <section class="page-section page-section-sign-up" id="inscribete">
+            <div class="container">
+                
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Inscríbete</h2>
+                
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-pencil-alt"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        
+                        <h1 class="text-white text-center text-uppercase">Muy pronto!</h1>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Social Icons-->
+                    <div class="col-md-4 mb-5 mb-lg-0 offset-md-4">
+                        <h4 class="text-uppercase mb-4">Acerca de Mi</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/adrianogalello/?locale=es_ES" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://gdi3d.github.io/" target="_blank"><i class="fa fa-fw fa-blog"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/gdi3d/" target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; ABC.DOCKER 2023. <br>Photo Credit: <a href="https://instagram.com/artbystevej" target="_blank">Steve Johnson</a></small></div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="landing/js/scripts.js"></script>
+
+    </body>
+</html>

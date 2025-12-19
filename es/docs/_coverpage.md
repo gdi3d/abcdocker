@@ -1,6 +1,6 @@
 <!-- docs/_coverpage.md -->
 
-![logo](/images/docker-svgrepo-com.svg)
+![logo](../../docs-images/docker-svgrepo-com.svg)
 
 # ABC.Docker
 
